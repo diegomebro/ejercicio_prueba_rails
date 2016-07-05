@@ -1,5 +1,6 @@
 <h1>Diego Meneses</h1>
-<form>
+<form action="<%= pages_save_user_path %>" method="post">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
   <div class="form-group">
     <label for="txt_nombre">Nombre</label>
     <input name="txt_nombre" type="text" class="form-control" id="txt_nombre" placeholder="Juanito">
